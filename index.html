@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>East Zone Polytechnic</title>
+	<style>
+		.container {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-gap: 10px;
+			padding: 10px;
+		}
+		
+		.card {
+			background-color: #fff;
+			padding: 10px;
+			border: 1px solid #ddd;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			transform: perspective(1000px) rotateY(0deg);
+			transition: transform 0.5s;
+			height: 180px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: #8B0A1A; /* dark red */
+			text-decoration: none;
+			font-size: 30px; /* added this line */
+		}
+		
+		.card:hover {
+			transform: perspective(1000px) rotateY(10deg);
+		}
+	</style>
+</head>
+<body>
+	<h1 style="text-align: center; margin-bottom: 20px;">East Zone Polytechnic</h1>
+	<div class="container">
+		<a href="#" class="card">1</a>
+		<a href="#" class="card">2</a>
+		<a href="#" class="card">3</a>
+		<a href="#" class="card">4</a>
+		<a href="#" class="card">5</a>
+		<a href="#" class="card">6</a>
+		<a href="#" class="card">7</a>
+		<a href="#" class="card">8</a>
+		<a href="#" class="card">9</a>
+		<a href="#" class="card">10</a>
+	</div>
+	
+	<script>
+		// No JavaScript needed for this example
+	</script>
+</body>
+</html>
