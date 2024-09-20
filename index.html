@@ -19,6 +19,7 @@
 			transition: transform 0.5s;
 			height: 180px;
 			display: flex;
+			flex-direction: column;
 			justify-content: center;
 			align-items: center;
 			color: #8B0A1A; /* dark red */
@@ -29,59 +30,308 @@
 		.card:hover {
 			transform: perspective(1000px) rotateY(10deg);
 		}
+		.card img {
+      width: 100px; /* adjust logo size */
+      height: 100px; /* adjust logo size */
+      margin-bottom: 10px;
+    }
+    
+    .card .card-text {
+      font-size: 18px; /* adjust text size */
+    }
 	</style>
 </head>
 <body>
 	<h1 style="text-align: center; margin-bottom: 20px;">West Zone Polytechnics</h1>
 	<div class="container">
-		<a href="https://www.nript.ac.in/" class="card">4006	NORTHERN REGIONAL INST. OF PRINTING TECH. ALLAHABAD</a>
-		<a href="https://govtpolytechnicatraulia.com/" class="card">4189	GOVT. POLYTECHNIC, ATRAULIYA, AZAMGARH  ( P P P MODEL)</a>
-		<a href="http://ggpvaranasi.in/" class="card">4401	GOVT. GIRLS POLYTECHNIC, VARANASI</a>
-		<a href="https://gpfatehpur.org/" class="card">4402	GOVT. POLYTECHNIC, FATEHPUR</a>
-		<a href="https://www.gpbasti.com/" class="card">4403	GOVT. POLYTECHNIC, BASTI</a>
-		<a href="https://gpgorakhpur.ac.in/" class="card">4404	GOVT. POLYTECHNIC, GORAKHPUR</a>
-		<a href="HTTPS://GGPGORAKHPUR.ORG/" class="card">4405	GOVT. GIRLS. POLYTECHNIC, GORAKHPUR</a>
-		<a href="http://ggpald.com/" class="card">4407	GOVT. GIRLS POLYTECHNIC, ALLAHABAD</a>
-		<a href="https://www.ggpmeja.ac.in/" class="card">4408	GOVT. GIRLS POLYTECHNIC, MEZA, ALLAHABAD</a>
-		<a href="https://gpdeoria.com/" class="card">4409	GOVT. POLYTECHNIC, DEORIA</a>
-		<a href="https://gpghazipur.ac.in/" class="card">4410	GOVT. POLYTECHNIC, GAZIPUR</a>
-		<a href="https://www.sbpgpazamgarh.in/" class="card">4411	SAVITRIBAI PHULE GOVT. POLYTECHNIC AZAMGARH</a>
-		<a href="https://www.gpjaunpur.org/" class="card">4412	GOVT. POLYTECHNIC, JAUNPUR</a>
-		<a href="http://www.governmentpolytechnicmzp.com/" class="card">4413	GOVT. POLYTECHNIC, MIRZAPUR</a>
-		<a href="http://gppratapgarh.in/" class="card">4414	GOVT. POLYTECHNIC, PRATAPGARH</a>
-		<a href="http://ggpb.in/" class="card">4415	GOVT. GIRLS POLYTECHNIC, BALLIA</a>
-		<a href="http://mjpgpkaushambi.org/" class="card">4422	MAHATAMA JYOTIBAPHULE GOVT. POLYTECHNIC, KAUSHAMBI</a>
-		<a href="http://www.gpmau.in/" class="card">4425	GOVT. POLYTECHNIC, MAU</a>
-		<a href="https://mmitgorakhpur.in/" class="card">4429	MAHAMAYA POLYTECHNIC OF INFORMATION TECHNOLOGY, HARIHARPUR, GORAKHPUR</a>
-		<a href="https://www.mmpchandauli.ac.in/" class="card">4430	MAHAMAYA POLYTECHNIC OF INFORMATION TECHNOLOGY CHANDAULI</a>
-		<a href="http://gpsonebhadra.in/" class="card">4444	GOVT. POLYTECHNIC, SONBHADRA</a>
-		<a href="https://urise.up.gov.in/poly/4446" class="card">4446	MAHAKARUNIK TATHAGAT GAUTAM BUDDHA GOVT. POLYTECHNIC, SIDDHARTHA NAGAR</a>
-		<a href="https://www.gpaurai.ac.in/" class="card">4447	GOVT. POLYTECHNIC, AURAI, UGAPUR, BHADOHI ROAD, SANT RAVIDAS NAGAR</a>
-		<a href="https://gpbhilihili.in/" class="card">4448	GOVT. POLYTECHNIC, BHILIHILI, AZAMGARH</a>
-		<a href="https://www.gpppratapgarh.in/" class="card">4477	GOVT. POLYTECHNIC, PREMDHAR PATTI, RANIGANJ, PRATAPGARH</a>
-		<a href="https://urise.up.gov.in/poly/4478" class="card">4478	GOVT. POLYTECHNIC, KURU PINDRA, VARANASI</a>
-		<a href="https://gpchksbasti.in/" class="card">4479	GOVT. POLYTECHNIC, CHABILAHA, KHOR, SADAR , BASTI</a>
-		<a href="https://gpjigirsand.in/" class="card">4480	GOVT. POLYTECHNIC, JIGIRSAND, SIKANDARPUR, BALLIA</a>
-		<a href="https://mmitkushinagar.co.in/" class="card">4806	MAHAMAYA POLYTECHNIC OF INFORMATION TECHNOLOGY KUSHINAGAR</a>
-		<a href="https://www.mmitgp.ac.in/" class="card">4807	MAHAMAYA POLYTECHNIC OF INFORMATION TECHNOLOGY MAHARAJGANJ</a>
-		<a href="https://urise.up.gov.in/poly/4808" class="card">4808	GOVT. POLYTECHNIC SINDURIA SONBHADRA</a>
-		<a href="https://gpchopan.in/" class="card">4809	GOVT. POLYTECHNIC CHOPAN SONBHADRA</a>
-		<a href="https://www.govtpolytechnicrjh.com/" class="card">4810	GOVT. POLYTECHNIC RAJGARH MIRZAPUR</a>
-		<a href="https://gpchunar.in/" class="card">4811	GOVT. POLYTECHNIC CHUNAR MIRZAPUR</a>
-		<a href="https://urise.up.gov.in/poly/4812" class="card">4812	MAHAMAYA POLYTECHNIC OF INFORMATION TECHNOLOGY SANTKABIRNAGAR</a>
-		<a href="https://urise.up.gov.in/poly/4813" class="card">4813	MAHAMAYA POLYTECHNIC OF INFORMATION TECHNOLOGY SIDHARTHANAGAR</a>
-		<a href="https://mmitkaushambi.org/" class="card">4814	MAHAMAYA POLYTECHNIC OF INFORMATION TECHNOLOGY KAUSAMBHI</a>
-		<a href="https://www.gpbindki.in/" class="card">4815	GOVT. POLYTECHNIC BINDKI FATEHPUR</a>
-		<a href="http://gpsknagar.org/" class="card">4816	GOVT. POLYTECHNIC SANTKABIR NAGAR</a>
-		<a href="https://gpchariyaondeoria.in/" class="card">4817	GOVT. POLYTECHNIC CHARIYAON DEVRIA</a>
-		a href="https://www.srgpchandauli.ac.in/" class="card">4833	SANT RAVIDAS GOVERNMENT POLYTECHNIC,CHAKIA,CHANDAULI</a>
-		<a href="https://gphatakushinagar.in/" class="card">4834	GOVT. POLYTECHNIC,MUJHANA ,HATA, KUSHINAGAR</a>
-		<a href="https://gppsmaharajganj.org/" class="card">4835	GOVT. POLYTECHNIC,PURENA,SADAR,MAHARAJGANJ</a>
-		<a href="https://gpgm.aicceds.org/" class="card">4955	GOVERNMENT POLYTECHNIC GHOSI MAU RUN BY AICCEDS (PPP MODE)</a>
-		<a href="https://gpppa.aicceds.org/" class="card">GOVERNMENT POLYTECHNIC PHOOLPUR PAWAI AZAMGARH RUN BY AICCEDS (PPP MODE)</a>
-		<a href="#" class="card">4957	GOVT. GIRLS POLYTECHNIC SADAR MIRZAPUR (PPP MODE)</a>
-		<a href="https://gpprayagraj.com/" class="card">4958	GOVERNMENT POLYTECHNIC BARA (PPP MODE)</a>
-		<a href="https://gpballia.com/" class="card">4959	GOVERNMENT POLYTECHNIC BANSHDEEH (PPP MODE)</a>
+		<a href="https://www.nript.ac.in/" class="card">
+			<img src="logo.jpg" alt="">
+    			<div class="card-text"></div>
+			<div class="card-text"></div>
+			<div class="card-text"></div>
+			4006	NORTHERN REGIONAL INST. OF PRINTING TECH. ALLAHABAD</a>
+		<a href="https://govtpolytechnicatraulia.com/" class="card">
+			<img src="logo.jpg" alt="">
+    			<div class="card-text"></div>
+			<div class="card-text"></div>
+			<div class="card-text"></div>
+			4189	GOVT. POLYTECHNIC, ATRAULIYA, AZAMGARH  ( P P P MODEL)</a>
+		<a href="http://ggpvaranasi.in/" class="card">
+			<img src="logo.jpg" alt="">
+    			<div class="card-text"></div>
+			<div class="card-text"></div>
+			<div class="card-text"></div>
+			4401	GOVT. GIRLS POLYTECHNIC, VARANASI</a>
+		<a href="https://gpfatehpur.org/" class="card">
+			<img src="logo.jpg" alt="">
+    			<div class="card-text"></div>
+			<div class="card-text"></div>
+			<div class="card-text"></div>
+			4402	GOVT. POLYTECHNIC, FATEHPUR</a>
+		<a href="https://www.gpbasti.com/" class="card">
+			<img src="logo.jpg" alt="">
+    			<div class="card-text"></div>
+			<div class="card-text"></div>
+			<div class="card-text"></div>
+			4403	GOVT. POLYTECHNIC, BASTI</a>
+		<a href="https://gpgorakhpur.ac.in/" class="card">
+			<img src="logo.jpg" alt="">
+    			<div class="card-text"></div>
+			<div class="card-text"></div>
+			<div class="card-text"></div>
+			4404	GOVT. POLYTECHNIC, GORAKHPUR</a>
+		<a href="HTTPS://GGPGORAKHPUR.ORG/" class="card">
+			<img src="logo.jpg" alt="">
+    			<div class="card-text"></div>
+			<div class="card-text"></div>
+			<div class="card-text"></div>
+			4405	GOVT. GIRLS. POLYTECHNIC, GORAKHPUR</a>
+		<a href="http://ggpald.com/" class="card">
+			<img src="logo.jpg" alt="">
+    			<div class="card-text"></div>
+			<div class="card-text"></div>
+			<div class="card-text"></div>
+			4407	GOVT. GIRLS POLYTECHNIC, ALLAHABAD</a>
+		<a href="https://www.ggpmeja.ac.in/" class="card">
+			<img src="logo.jpg" alt="">
+    			<div class="card-text"></div>
+			<div class="card-text"></div>
+			<div class="card-text"></div>
+			4408	GOVT. GIRLS POLYTECHNIC, MEZA, ALLAHABAD</a>
+		<a href="https://gpdeoria.com/" class="card">
+			<img src="logo.jpg" alt="">
+    			<div class="card-text"></div>
+			<div class="card-text"></div>
+			<div class="card-text"></div>
+			4409	GOVT. POLYTECHNIC, DEORIA</a>
+		<a href="https://gpghazipur.ac.in/" class="card">
+			<img src="logo.jpg" alt="">
+    			<div class="card-text"></div>
+			<div class="card-text"></div>
+			<div class="card-text"></div>
+			4410	GOVT. POLYTECHNIC, GAZIPUR</a>
+		<a href="https://www.sbpgpazamgarh.in/" class="card">
+			<img src="logo.jpg" alt="">
+    			<div class="card-text"></div>
+			<div class="card-text"></div>
+			<div class="card-text"></div>
+			4411	SAVITRIBAI PHULE GOVT. POLYTECHNIC AZAMGARH</a>
+		<a href="https://www.gpjaunpur.org/" class="card">
+			<img src="logo.jpg" alt="">
+    			<div class="card-text"></div>
+			<div class="card-text"></div>
+			<div class="card-text"></div>
+			4412	GOVT. POLYTECHNIC, JAUNPUR</a>
+		<a href="http://www.governmentpolytechnicmzp.com/" class="card">
+			<img src="logo.jpg" alt="">
+    			<div class="card-text"></div>
+			<div class="card-text"></div>
+			<div class="card-text"></div>
+			4413	GOVT. POLYTECHNIC, MIRZAPUR</a>
+		<a href="http://gppratapgarh.in/" class="card">
+			<img src="logo.jpg" alt="">
+    			<div class="card-text"></div>
+			<div class="card-text"></div>
+			<div class="card-text"></div>
+			4414	GOVT. POLYTECHNIC, PRATAPGARH</a>
+		<a href="http://ggpb.in/" class="card">
+			<img src="logo.jpg" alt="">
+    			<div class="card-text"></div>
+			<div class="card-text"></div>
+			<div class="card-text"></div>
+			4415	GOVT. GIRLS POLYTECHNIC, BALLIA</a>
+		<a href="http://mjpgpkaushambi.org/" class="card">
+			<img src="logo.jpg" alt="">
+    			<div class="card-text"></div>
+			<div class="card-text"></div>
+			<div class="card-text"></div>
+			4422	MAHATAMA JYOTIBAPHULE GOVT. POLYTECHNIC, KAUSHAMBI</a>
+		<a href="http://www.gpmau.in/" class="card">
+			<img src="logo.jpg" alt="">
+    			<div class="card-text"></div>
+			<div class="card-text"></div>
+			<div class="card-text"></div>
+			4425	GOVT. POLYTECHNIC, MAU</a>
+		<a href="https://mmitgorakhpur.in/" class="card">
+			<img src="logo.jpg" alt="">
+    			<div class="card-text"></div>
+			<div class="card-text"></div>
+			<div class="card-text"></div>
+			4429	MAHAMAYA POLYTECHNIC OF INFORMATION TECHNOLOGY, HARIHARPUR, GORAKHPUR</a>
+		<a href="https://www.mmpchandauli.ac.in/" class="card">
+			<img src="logo.jpg" alt="">
+    			<div class="card-text"></div>
+			<div class="card-text"></div>
+			<div class="card-text"></div>
+			4430	MAHAMAYA POLYTECHNIC OF INFORMATION TECHNOLOGY CHANDAULI</a>
+		<a href="http://gpsonebhadra.in/" class="card">
+			<img src="logo.jpg" alt="">
+    			<div class="card-text"></div>
+			<div class="card-text"></div>
+			<div class="card-text"></div>
+			4444	GOVT. POLYTECHNIC, SONBHADRA</a>
+		<a href="https://urise.up.gov.in/poly/4446" class="card">
+			<img src="logo.jpg" alt="">
+    			<div class="card-text"></div>
+			<div class="card-text"></div>
+			<div class="card-text"></div>
+			4446	MAHAKARUNIK TATHAGAT GAUTAM BUDDHA GOVT. POLYTECHNIC, SIDDHARTHA NAGAR</a>
+		<a href="https://www.gpaurai.ac.in/" class="card">
+			<img src="logo.jpg" alt="">
+    			<div class="card-text"></div>
+			<div class="card-text"></div>
+			<div class="card-text"></div>
+			4447	GOVT. POLYTECHNIC, AURAI, UGAPUR, BHADOHI ROAD, SANT RAVIDAS NAGAR</a>
+		<a href="https://gpbhilihili.in/" class="card">
+			<img src="logo.jpg" alt="">
+    			<div class="card-text"></div>
+			<div class="card-text"></div>
+			<div class="card-text"></div>
+			4448	GOVT. POLYTECHNIC, BHILIHILI, AZAMGARH</a>
+		<a href="https://www.gpppratapgarh.in/" class="card">
+			<img src="logo.jpg" alt="">
+    			<div class="card-text"></div>
+			<div class="card-text"></div>
+			<div class="card-text"></div>
+			4477	GOVT. POLYTECHNIC, PREMDHAR PATTI, RANIGANJ, PRATAPGARH</a>
+		<a href="https://urise.up.gov.in/poly/4478" class="card">
+			<img src="logo.jpg" alt="">
+    			<div class="card-text"></div>
+			<div class="card-text"></div>
+			<div class="card-text"></div>
+			4478	GOVT. POLYTECHNIC, KURU PINDRA, VARANASI</a>
+		<a href="https://gpchksbasti.in/" class="card">
+			<img src="logo.jpg" alt="">
+    			<div class="card-text"></div>
+			<div class="card-text"></div>
+			<div class="card-text"></div>
+			4479	GOVT. POLYTECHNIC, CHABILAHA, KHOR, SADAR , BASTI</a>
+		<a href="https://gpjigirsand.in/" class="card">
+			<img src="logo.jpg" alt="">
+    			<div class="card-text"></div>
+			<div class="card-text"></div>
+			<div class="card-text"></div>
+			4480	GOVT. POLYTECHNIC, JIGIRSAND, SIKANDARPUR, BALLIA</a>
+		<a href="https://mmitkushinagar.co.in/" class="card">
+			<img src="logo.jpg" alt="">
+    			<div class="card-text"></div>
+			<div class="card-text"></div>
+			<div class="card-text"></div>
+			4806	MAHAMAYA POLYTECHNIC OF INFORMATION TECHNOLOGY KUSHINAGAR</a>
+		<a href="https://www.mmitgp.ac.in/" class="card">
+			<img src="logo.jpg" alt="">
+    			<div class="card-text"></div>
+			<div class="card-text"></div>
+			<div class="card-text"></div>
+			4807	MAHAMAYA POLYTECHNIC OF INFORMATION TECHNOLOGY MAHARAJGANJ</a>
+		<a href="https://urise.up.gov.in/poly/4808" class="card">
+			<img src="logo.jpg" alt="">
+    			<div class="card-text"></div>
+			<div class="card-text"></div>
+			<div class="card-text"></div>
+			4808	GOVT. POLYTECHNIC SINDURIA SONBHADRA</a>
+		<a href="https://gpchopan.in/" class="card">
+			<img src="logo.jpg" alt="">
+    			<div class="card-text"></div>
+			<div class="card-text"></div>
+			<div class="card-text"></div>
+			4809	GOVT. POLYTECHNIC CHOPAN SONBHADRA</a>
+		<a href="https://www.govtpolytechnicrjh.com/" class="card">
+			<img src="logo.jpg" alt="">
+    			<div class="card-text"></div>
+			<div class="card-text"></div>
+			<div class="card-text"></div>
+			4810	GOVT. POLYTECHNIC RAJGARH MIRZAPUR</a>
+		<a href="https://gpchunar.in/" class="card">
+			<img src="logo.jpg" alt="">
+    			<div class="card-text"></div>
+			<div class="card-text"></div>
+			<div class="card-text"></div>
+			4811	GOVT. POLYTECHNIC CHUNAR MIRZAPUR</a>
+		<a href="https://urise.up.gov.in/poly/4812" class="card">
+			<img src="logo.jpg" alt="">
+    			<div class="card-text"></div>
+			<div class="card-text"></div>
+			<div class="card-text"></div>
+			4812	MAHAMAYA POLYTECHNIC OF INFORMATION TECHNOLOGY SANTKABIRNAGAR</a>
+		<a href="https://urise.up.gov.in/poly/4813" class="card">
+			<img src="logo.jpg" alt="">
+    			<div class="card-text"></div>
+			<div class="card-text"></div>
+			<div class="card-text"></div>
+			4813	MAHAMAYA POLYTECHNIC OF INFORMATION TECHNOLOGY SIDHARTHANAGAR</a>
+		<a href="https://mmitkaushambi.org/" class="card">
+			<img src="logo.jpg" alt="">
+    			<div class="card-text"></div>
+			<div class="card-text"></div>
+			<div class="card-text"></div>
+			4814	MAHAMAYA POLYTECHNIC OF INFORMATION TECHNOLOGY KAUSAMBHI</a>
+		<a href="https://www.gpbindki.in/" class="card">
+			<img src="logo.jpg" alt="">
+    			<div class="card-text"></div>
+			<div class="card-text"></div>
+			<div class="card-text"></div>
+			4815	GOVT. POLYTECHNIC BINDKI FATEHPUR</a>
+		<a href="http://gpsknagar.org/" class="card">
+			<img src="logo.jpg" alt="">
+    			<div class="card-text"></div>
+			<div class="card-text"></div>
+			<div class="card-text"></div>
+			4816	GOVT. POLYTECHNIC SANTKABIR NAGAR</a>
+		<a href="https://gpchariyaondeoria.in/" class="card">
+			<img src="logo.jpg" alt="">
+    			<div class="card-text"></div>
+			<div class="card-text"></div>
+			<div class="card-text"></div>
+			4817	GOVT. POLYTECHNIC CHARIYAON DEVRIA</a>
+		a href="https://www.srgpchandauli.ac.in/" class="card">
+		<img src="logo.jpg" alt="">
+    			<div class="card-text"></div>
+			<div class="card-text"></div>
+			<div class="card-text"></div>
+		4833	SANT RAVIDAS GOVERNMENT POLYTECHNIC,CHAKIA,CHANDAULI</a>
+		<a href="https://gphatakushinagar.in/" class="card">
+			<img src="logo.jpg" alt="">
+    			<div class="card-text"></div>
+			<div class="card-text"></div>
+			<div class="card-text"></div>
+			4834	GOVT. POLYTECHNIC,MUJHANA ,HATA, KUSHINAGAR</a>
+		<a href="https://gppsmaharajganj.org/" class="card">
+			<img src="logo.jpg" alt="">
+    			<div class="card-text"></div>
+			<div class="card-text"></div>
+			<div class="card-text"></div>
+			4835	GOVT. POLYTECHNIC,PURENA,SADAR,MAHARAJGANJ</a>
+		<a href="https://gpgm.aicceds.org/" class="card">
+			<img src="logo.jpg" alt="">
+    			<div class="card-text"></div>
+			<div class="card-text"></div>
+			<div class="card-text"></div>
+			4955	GOVERNMENT POLYTECHNIC GHOSI MAU RUN BY AICCEDS (PPP MODE)</a>
+		<a href="https://gpppa.aicceds.org/" class="card">
+			<img src="logo.jpg" alt="">
+    			<div class="card-text"></div>
+			<div class="card-text"></div>
+			<div class="card-text"></div>
+			GOVERNMENT POLYTECHNIC PHOOLPUR PAWAI AZAMGARH RUN BY AICCEDS (PPP MODE)</a>
+		<a href="#" class="card">
+			<img src="logo.jpg" alt="">
+    			<div class="card-text"></div>
+			<div class="card-text"></div>
+			<div class="card-text"></div>
+			4957	GOVT. GIRLS POLYTECHNIC SADAR MIRZAPUR (PPP MODE)</a>
+		<a href="https://gpprayagraj.com/" class="card">
+			<img src="logo.jpg" alt="">
+    			<div class="card-text"></div>
+			<div class="card-text"></div>
+			<div class="card-text"></div>
+			4958	GOVERNMENT POLYTECHNIC BARA (PPP MODE)</a>
+		<a href="https://gpballia.com/" class="card">
+			<img src="logo.jpg" alt="">
+    			<div class="card-text"></div>
+			<div class="card-text"></div>
+			<div class="card-text"></div>
+			4959	GOVERNMENT POLYTECHNIC BANSHDEEH (PPP MODE)</a>
 		
 	</div>
 	
